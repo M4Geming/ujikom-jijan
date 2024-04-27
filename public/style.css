@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    background: rgba(113, 99, 186, 255);
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav li a:hover,
+active {
+    background: grey;
+}
+
+.submenu {
+    display: none;
+    padding-left: 1.5rem;
+}
+
+.submenu li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.navbar {
+    position: relative;
+    background: rgba(113, 99, 186, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar i {
+    cursor: pointer;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.content {
+    position: relative;
+    margin: 20px;
+}
